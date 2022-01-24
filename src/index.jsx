@@ -1,16 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { ThemeProvider } from '@mui/material';
-
-import theme from './styles/theme';
+import { SettingsProvider } from './contexts/SettingsContext';
 
 import App from './App';
 
 const wrappedApp = (
-  <ThemeProvider theme={theme}>
+  <SettingsProvider>
     <App />
-  </ThemeProvider>
+  </SettingsProvider>
 );
 
 ReactDOM.render(wrappedApp, document.getElementById('root'));
