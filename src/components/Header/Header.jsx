@@ -21,7 +21,7 @@ export const Header = () => {
     const { themeMode, onToggleMode } = useContext(SettingsContext);
     const isLight = themeMode === 'light';
     return (
-        <Toolbar dense sx={{pl: 0, pr: 0}}>
+        <Toolbar dense sx={{pl: '0 !important', pr: '0 !important'}}>
             <Grid container>
                 <Grid item>
                     <Box sx={{

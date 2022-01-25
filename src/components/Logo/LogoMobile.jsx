@@ -15,7 +15,7 @@ export const Logo = () => (
         }}
     >
         <Star sx={{ color: '#f00', fontSize: 25, }} />
-        <Typography sx={{ color: 'text.primary', fontWeight: 'bold', fontSize: 25, marginBottom: -2 }} variant="button">
+        <Typography sx={{ color: 'text.primary', fontWeight: 'bold', fontSize: 25, marginBottom: '-2px !important' }} variant="button">
             VOSTOK
         </Typography>
     </Stack>

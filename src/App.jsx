@@ -11,6 +11,8 @@ import { darkTheme, lightTheme } from './styles/theme';
 
 import Header from "./components/Header";
 
+import HelloView from "./views/HelloView";
+
 export const App = () => {
     const { themeMode } = useContext(SettingsContext);
     return (
@@ -18,6 +20,7 @@ export const App = () => {
             <Box sx={{ background: themeMode === 'dark' ? '#212121' : '#fff' }}>
                 <Container >
                     <Header />
+                    <HelloView />
                 </Container>
             </Box>
         </ThemeProvider>

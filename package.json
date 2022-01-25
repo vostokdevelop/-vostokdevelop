@@ -11,10 +11,12 @@
     "@mui/lab": "^5.0.0-alpha.62",
     "@mui/material": "^5.2.6",
     "@mui/styles": "^5.2.3",
+    "aos": "^2.3.4",
     "react": "^17.0.2",
+    "react-declarative": "^1.6.13",
     "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "react-declarative": "^1.6.13"
+    "react-lazy-load-image-component": "^1.5.1",
+    "react-scripts": "5.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
