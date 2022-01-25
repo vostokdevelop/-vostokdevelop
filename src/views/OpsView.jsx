@@ -21,7 +21,7 @@ export const OpsView = () => {
     const isLight = themeMode === 'light';
     return (
         <Grid container columnSpacing={3} alignItems="center" sx={{ mb: 15 }}>
-            <Grid data-aos="slide-right" minHeight="375px" item xs={12} md={6} display={{ xs: 'none', md: 'block' }}>
+            <Grid data-aos="slide-right" minHeight="375px" item xs={12} md={6} display={{ xs: 'none', md: 'block', overflow: 'hidden' }}>
                 <AutoSizer>
                     {({ width, height }) => (
                         <Box display="flex" alignItems="center" justifyContent="center" width={width} height={height} sx={{ background: isLight ? '#e3e3e3' : '#3e3e3e' }}>
