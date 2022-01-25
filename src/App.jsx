@@ -13,6 +13,7 @@ import { darkTheme, lightTheme } from './styles/theme';
 import Header from "./components/Header";
 
 import HelloView from "./views/HelloView";
+import OpsView from "./views/OpsView";
 
 export const App = () => {
     const { themeMode } = useContext(SettingsContext);
@@ -23,6 +24,7 @@ export const App = () => {
                 <Container >
                     <Header />
                     <HelloView />
+                    <OpsView />
                 </Container>
             </Box>
         </ThemeProvider>

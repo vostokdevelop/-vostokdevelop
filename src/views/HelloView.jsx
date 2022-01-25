@@ -14,7 +14,7 @@ import AutoSizer from '../components/common/AutoSizer';
 
 export const HelloView = () => {
     return (
-        <Grid container columnSpacing={3} alignItems="center" sx={{ height: 1 }}>
+        <Grid container columnSpacing={3} alignItems="center" sx={{ mb: 15, }}>
             <Grid data-aos="slide-right" item xs={12} md={6}>
                 <Stack
                     spacing={5}
