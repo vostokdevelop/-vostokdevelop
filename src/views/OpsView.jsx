@@ -1,7 +1,3 @@
-import { useRef, useContext } from 'react';
-
-import { SettingsContext } from '../contexts/SettingsContext';
-
 import launchIcon from '@iconify/icons-carbon/launch';
 import { Icon } from '@iconify/react';
 
@@ -13,21 +9,21 @@ import Button from '@mui/material/Button';
 
 import Image from '../components/common/Image';
 import AutoSizer from '../components/common/AutoSizer';
+import Contributors from '../components/common/Contributors';
 
 import openBlank from '../utils/openBlank';
 
 export const OpsView = () => {
-    const { themeMode } = useContext(SettingsContext);
-    const isLight = themeMode === 'light';
     return (
         <Grid container columnSpacing={3} alignItems="center" sx={{ mb: 15 }}>
             <Grid data-aos="slide-right" minHeight="375px" item xs={12} md={6} display={{ xs: 'none', md: 'block', overflow: 'hidden' }}>
                 <AutoSizer>
                     {({ width, height }) => (
-                        <Box display="flex" alignItems="center" justifyContent="center" width={width} height={height} sx={{ background: isLight ? '#e3e3e3' : '#3e3e3e' }}>
+                        <Box display="flex" alignItems="center" justifyContent="center" width={width} height={height} sx={{position: 'relative'}}>
+                            <Contributors />
                             <Image
                                 src={`/svg/osi_standard_logo.svg`}
-                                sx={{ width: 256 / 2, height: 248 / 2 }}
+                                sx={{ width: 256 / 2, height: 248 / 2, zIndex: 9 }}
                             />
                         </Box>
                     )}

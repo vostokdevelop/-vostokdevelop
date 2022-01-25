@@ -13,25 +13,21 @@ html, body {
   user-select: none;
 }
 
-body::-webkit-scrollbar {
-  display: none;
-}
-
-#root *::-webkit-scrollbar,
+/**::-webkit-scrollbar,
 .the-scroll-area__needScroll::-webkit-scrollbar {
   -webkit-appearance: none;
   height: 6px;
   width: 6px;
 }
 
-#root *::-webkit-scrollbar-track,
+*::-webkit-scrollbar-track,
 .the-scroll-area__needScroll::-webkit-scrollbar-track {
   background: #E6E9EE;
   border-radius: 10px;
 }
 
-#root *::-webkit-scrollbar-thumb,
+*::-webkit-scrollbar-thumb,
 .the-scroll-area__needScroll::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background: #4FC0E8;
-}
+}*/

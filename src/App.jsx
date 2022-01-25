@@ -11,9 +11,11 @@ import { SettingsContext } from './contexts/SettingsContext';
 import { darkTheme, lightTheme } from './styles/theme';
 
 import Header from "./components/Header";
+import Adjust from "./components/Adjust";
 
 import HelloView from "./views/HelloView";
 import OpsView from "./views/OpsView";
+import ProjView from "./views/ProjView";
 
 export const App = () => {
     const { themeMode } = useContext(SettingsContext);
@@ -25,7 +27,9 @@ export const App = () => {
                     <Header />
                     <HelloView />
                     <OpsView />
+                    {/*<ProjView />*/}
                 </Container>
+                <Adjust />
             </Box>
         </ThemeProvider>
     );
