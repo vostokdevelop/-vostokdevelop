@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { ThemeProvider } from '@mui/material';
 
 import Container from '@mui/material/Container';
+import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 
 import { SettingsContext } from './contexts/SettingsContext';
@@ -18,6 +19,7 @@ export const App = () => {
     return (
         <ThemeProvider theme={themeMode === 'dark' ? darkTheme : lightTheme}>
             <Box sx={{ background: themeMode === 'dark' ? '#212121' : '#fff' }}>
+                <CssBaseline />
                 <Container >
                     <Header />
                     <HelloView />
