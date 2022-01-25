@@ -12,7 +12,26 @@ import Star from '@mui/icons-material/Star';
 import Image from '../components/common/Image';
 import AutoSizer from '../components/common/AutoSizer';
 
+import openBlank from '../utils/openBlank';
+
 export const HelloView = () => {
+
+    const createLink = (to = '') => () => {
+        if (to === 'figma') {
+            openBlank('https://www.figma.com/');
+        } else if (to === 'javascript') {
+            openBlank('https://v8.dev/');
+        } else if (to === 'typescript') {
+            openBlank('https://www.typescriptlang.org/');
+        } else if (to === 'material') {
+            openBlank('https://mui.com/');
+        } else if (to === 'react') {
+            openBlank('https://reactjs.org/');
+        } else if (to === 'nest') {
+            openBlank('https://nestjs.com/');
+        }
+    };
+
     return (
         <Grid container columnSpacing={3} alignItems="center" sx={{ mb: 15, }}>
             <Grid data-aos="slide-right" item xs={12} md={6}>
@@ -44,12 +63,13 @@ export const HelloView = () => {
                     </Typography>
 
                     <Stack direction="row" spacing={2.5}>
-                        {['figma', 'javascript', 'typescript', 'material', 'react'].map((icon) => (
+                        {['figma', 'javascript', 'typescript', 'material', 'react', 'nest'].map((icon) => (
                             <Image
                                 key={icon}
                                 alt={icon}
+                                onClick={createLink(icon)}
                                 src={`/svg/ic_platform_${icon}.svg`}
-                                sx={{ width: 32, height: 32 }}
+                                sx={{ width: 32, height: 32, cursor: 'pointer' }}
                             />
                         ))}
                     </Stack>
