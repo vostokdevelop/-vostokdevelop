@@ -15,7 +15,8 @@ import Adjust from "./components/Adjust";
 
 import HelloView from "./views/HelloView";
 import OpsView from "./views/OpsView";
-import ProjView from "./views/ProjView";
+// import ProjView from "./views/ProjView";
+import ContactView from "./views/ContactView";
 
 export const App = () => {
     const { themeMode } = useContext(SettingsContext);
@@ -28,6 +29,7 @@ export const App = () => {
                     <HelloView />
                     <OpsView />
                     {/*<ProjView />*/}
+                    <ContactView />
                 </Container>
                 <Adjust />
             </Box>
