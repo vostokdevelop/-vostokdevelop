@@ -1,7 +1,7 @@
 import Box from '@mui/material/Box';
 
 export const Adjust = () => (
-    <Box pt={25} />
+    <Box pt={20} />
 );
 
 export default Adjust;
