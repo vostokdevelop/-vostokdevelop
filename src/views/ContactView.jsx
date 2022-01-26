@@ -18,12 +18,14 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 
 import ContactLandingStep from '../components/ContactLandingStep';
 
+import useIsMobile from '../hooks/useIsMobile';
+
 import openBlank from '../utils/openBlank';
 
 const STEPS = [
     {
         title: 'Product Research',
-        description: "We will validate a product idea and see if it'll be successful or not.",
+        description: "We will validate a product idea and see if it'll be successful or not",
         icon: (
             <Biotech style={{ fontSize: 80 }} />
         ),
@@ -47,6 +49,7 @@ const STEPS = [
 export const ContactView = () => {
     const [activeStep, setActiveStep] = useState(0);
     const maxSteps = STEPS.length;
+    const isMobile = useIsMobile();
     const handleNext = () => {
         setActiveStep((prevActiveStep) => prevActiveStep + 1);
     };
@@ -55,7 +58,7 @@ export const ContactView = () => {
         setActiveStep((prevActiveStep) => prevActiveStep - 1);
     };
     return (
-        <Stack data-aos="slide-up" direction="column" alignItems="center">
+        <Stack data-aos={isMobile ? "slide-right" : "slide-left"} direction="column" alignItems="center">
 
             <Typography textAlign={{ xs: 'center', md: 'start' }} width="100%" variant="h4">
                 Contact us
