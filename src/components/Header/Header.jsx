@@ -35,7 +35,7 @@ export const Header = () => {
                 <Grid item xs />
                 <Grid item>
                     <Stack sx={{ height: '100%' }} alignItems="center" direction="row" spacing={1}>
-                        <Button sx={{
+                        <Button onClick={() => openBlank('mailto:tripolskypetr@gmail.com')} sx={{
                             fontWeight: 'bold',
                         }}>
                             Hire us
