@@ -30,7 +30,7 @@ const STEPS = [
     },
     {
         title: 'Tech Implementation',
-        description: 'We will select the technological equipment which will solve the problems of your company',
+        description: 'We will choose the technological equipment which will solve the problems of your company',
         icon: (
             <Science style={{ fontSize: 80 }} />
         ),
